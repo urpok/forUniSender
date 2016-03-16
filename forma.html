@@ -12,41 +12,52 @@
 		<p class="head1">Новый отчёт</p>
 		<form>
 			<p class="head2">Категория</p>
-			<span class="list1">Подписчики</span>
-			<span class="list1">Письма</span>
-			<span class="list1">СМС</span>
-			<span class="list1">Отчеты</span>
-			<span class="list1">Деньги</span>
-			<span class="list1">Другое</span>
+			<span class="list1 listActiv" id="a1">Подписчики</span>
+			<span class="list1" id="a2">Письма</span>
+			<span class="list1" id="a3">СМС</span>
+			<span class="list1" id="a4">Отчеты</span>
+			<span class="list1" id="a5">Деньги</span>
+			<span class="list1" id="a6">Другое</span>
 			</br>
 
 				<span class="SP1 SPR">		
 					<label class="head2 head3">Суб-категория</label></br>
-					<select class="Sel">
-					<option>Не понятно как</option>
+					<select class="Sel" id="b1" name="why">
+						<option value="1">Выбрать</option>
+						<option value="2"> Не понятно как</option>
 					</select>
 				</span>
 
 				<span class="SP1">
 					<label class="head2 head3">Тип</label></br>
-					<select class="Sel ">
-					<option>Создание</option>
+					<select class="Sel" id="b2" name="what">
+						<option value="1">Выбрать</option>
+						<option value="2">Создание</option>
 					</select>
 				</span>
 
 				<span class="SP1 SPL">
 					<label class="head2 head3">Обьект</label></br>
-					<select class="Sel">
-					<option>Экспорт</option>
+					<select class="Sel" id="b3" name="know">
+						<option value="1">Выбрать</option>
+						<option value="2">Экспорт</option>
 					</select>
 				</span>
 			<div class="head4">
 				<p class="head2">Описание</p>
-				<textarea rows="6" cols="66" name="text" class="TEXAR"></textarea>
+				<textarea rows="6" cols="20" name="text" class="TEXAR"></textarea>
 			</div>
-			<button disabled type="submit" class="BUT">Отправить</button>
+			<button disabled type="button" class="BUT" id="btnn1">Отправить</button>
 		</form>
 	</div>
+	<div class="PreLoCont">
+		<div class="PreLo"><img src="preloader.gif"></div>
+	</div>
+		
+	<div class="TulTp">
+		<div class="Tultp"><h2>Отчет успешно отправлен</h2></div>
+	</div>
+
 </div>
 </body>
 <script type="text/javascript" src="js/jquery-2.2.1.min.js"></script>

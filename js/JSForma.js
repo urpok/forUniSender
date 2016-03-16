@@ -1,9 +1,35 @@
-$("#contactForm").submit(function(event){
-    event.preventDefault();
-});	
+$(document).ready(function(){
+	var el='#a1';
+	$('.list1').click(function(event){
+		el='#'+event.target.id;
+		$('.list1').removeClass('listActiv');
+		$(el).addClass('listActiv');
+		console.log(el);
+	});
+		$('.Sel').click(function(){
+			$('.Sel').change( function(){
+				check1();
+				check()
+			});
+		});
 
-$('#btn-preview').click(function(){
-	$('body').append('<div class="row"><div class="col-sm-6 col-sm-offset-3 form-preview"><h3 id="headForm">Prev See:</h3><div class="row"><div class="col-sm-6"><h4>'+$("#name").val()+'</h4></div><div class="col-sm-6"><h4>'+$("#email").val()+'</h4></div></div></div></div>');
-	$('body').append('<div class="row"><div class="col-sm-6 col-sm-offset-3 form-preview1"><div class="row"><div class="col-sm-12"><p>'+$("#message").val()+'</p></div></div></div>');
-}
-);
+	function check(){
+		if($("select#b1").val()!=1 && $("select#b2").val()!=1 && $("select#b3").val()!=1){
+			$('#btnn1').removeAttr('disabled').addClass('BUTACT');
+			
+		}
+	};
+	function check1(){
+		if ($("select#b1").val() || $("select#b2").val() || $("select#b3").val() == 1){
+			$('#btnn1').attr('disabled','disabled').removeClass('BUTACT');
+		}
+	};
+
+	$('.BUT').click(function(){
+		$('.PreLoCont').fadeIn(10).delay(300).fadeOut(10);
+		$('.TulTp').delay(300).fadeIn(10);
+		setTimeout(function() {window.location.reload();}, 1200);
+	});
+
+
+});

@@ -47,6 +47,51 @@ body{
 	left: 0;
 	margin: auto;
 }
+.PreLo{
+	height: 128px;
+	width: 128px;
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	margin: auto;
+	
+}
+.PreLoCont{
+	background-color: rgba(0,0,0,.2);
+	height: 100%;
+	width: 100%;
+	display: none;
+	position: fixed;
+	z-index: 10;
+}
+.TulTp{
+	background-color: rgba(0,0,0,.2);
+	height: 100%;
+	width: 100%;
+	display: none;
+	position: fixed;
+	z-index: 15;
+}
+.Tultp h2{
+	text-align: center;
+	background-color: white;
+	margin: auto;
+	padding: 10px;
+	border-radius: 4px;
+
+}
+.Tultp{
+	height: 40px;
+	width: 400px;
+	margin: auto;
+	position: absolute;
+	top: -40px;
+	right: 0;
+	bottom: 0;
+	left: 0;
+}
 
 .Sel{
 	
@@ -90,9 +135,12 @@ body{
 }
 .head4{
 	margin-top: 85px;
+	width: 100%;
 }
 .TEXAR{
 	border: 2px solid #ebebeb;
+	width: 100%;
+	padding: 0;
 }
 .BUT{
 	background-color: #ebebeb;
@@ -101,6 +149,7 @@ body{
 	padding: 6px 15px;
 	margin-top:15px; 
 	font-size: 10px;
+	cursor: pointer;
 }
 .BUTACT{
 	background-color: #fecf0d;
