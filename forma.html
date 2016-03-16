@@ -2,14 +2,52 @@
 <html>
 <head>
     <title>Contact form</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <meta charset="utf-8">
     <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
 	<link rel="stylesheet" href="css/cssForma.css">
-
 </head>
 <body>
+<div class="parDi">
+	<div class="ChiDi">
+		<p class="head1">Новый отчёт</p>
+		<form>
+			<p class="head2">Категория</p>
+			<span class="list1">Подписчики</span>
+			<span class="list1">Письма</span>
+			<span class="list1">СМС</span>
+			<span class="list1">Отчеты</span>
+			<span class="list1">Деньги</span>
+			<span class="list1">Другое</span>
+			</br>
 
+				<span class="SP1 SPR">		
+					<label class="head2 head3">Суб-категория</label></br>
+					<select class="Sel">
+					<option>Не понятно как</option>
+					</select>
+				</span>
+
+				<span class="SP1">
+					<label class="head2 head3">Тип</label></br>
+					<select class="Sel ">
+					<option>Создание</option>
+					</select>
+				</span>
+
+				<span class="SP1 SPL">
+					<label class="head2 head3">Обьект</label></br>
+					<select class="Sel">
+					<option>Экспорт</option>
+					</select>
+				</span>
+			<div class="head4">
+				<p class="head2">Описание</p>
+				<textarea rows="6" cols="66" name="text" class="TEXAR"></textarea>
+			</div>
+			<button disabled type="submit" class="BUT">Отправить</button>
+		</form>
+	</div>
+</div>
 </body>
 <script type="text/javascript" src="js/jquery-2.2.1.min.js"></script>
 <script type="text/javascript" src="js/JSForma.js"></script>

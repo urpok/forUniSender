@@ -1,10 +1,107 @@
-.form-preview{
-	background: #FFF8DC;
-	margin-top: 15px;
+body{
+	width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
 }
-.form-preview1{
-	background: #FFF8DC;
+.list1{
+	padding: 5px 20px;
+	border: 1px solid #d3d3d3;
+	margin-right: -1px;
+	font-size: 12px;
+	float: left;
 }
-.mesageArea{
-	padding: 
+.list1:hover{
+	background-color: #fcedaa;
+	cursor: pointer;
+}
+.listActiv{
+	background-color: #fcedaa;
+}
+.head1{
+	font-size: 19px;
+}
+.head2{
+	color: #828f88;
+	font-size: 10px;
+	margin-bottom: 4px;
+	margin: 4px 2px;
+}
+.parDi{
+	min-width: 720px;
+	width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: auto;
+}
+.ChiDi{
+	width: 487px;
+	height: auto;
+	position: absolute;
+	top: 132px;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	margin: auto;
+}
+
+.Sel{
+	
+	-webkit-appearance: none;
+	background: url(../strip.jpg) no-repeat right center, -webkit-linear-gradient(#fdfdfd, #f1f1f1);
+	background-position: right center;
+	background-repeat: no-repeat;
+	line-height: 1em;
+	/* for FF */
+	-moz-appearance: none;
+	text-indent: 0.01px; 
+	text-overflow: '';
+	/* for IE */
+	-ms-appearance: none;
+	appearance: none!important;
+	border-radius: 3px;
+	height: 24px;
+	width: 100%;
+	font-size: 10px;
+	border-color: #d6d2d1;
+	margin-top: 3px;
+	margin-left: auto;
+	margin-right: auto;
+
+}
+.Sel:hover{
+	background: url(../strip.jpg) no-repeat right center, -webkit-linear-gradient(#f1f1f1, #fdfdfd);
+}
+
+.SP1{
+	height: 40px;
+	width: 32%;
+	float: left;
+	margin-top: 18px;
+}
+.SPR{
+	margin-right: 2%;
+}
+.SPL{
+	margin-left: 2%;
+}
+.head4{
+	margin-top: 85px;
+}
+.TEXAR{
+	border: 2px solid #ebebeb;
+}
+.BUT{
+	background-color: #ebebeb;
+	border-radius: 3px;
+	border: 1px solid #b89e51;
+	padding: 6px 15px;
+	margin-top:15px; 
+	font-size: 10px;
+}
+.BUTACT{
+	background-color: #fecf0d;
 }
