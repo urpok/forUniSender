@@ -96,7 +96,7 @@ body{
 .Sel{
 	
 	-webkit-appearance: none;
-	background: url(../strip.jpg) no-repeat right center, -webkit-linear-gradient(#fdfdfd, #f1f1f1);
+	background: url(../img/strip.jpg) no-repeat right center, -webkit-linear-gradient(#fdfdfd, #f1f1f1);
 	background-position: right center;
 	background-repeat: no-repeat;
 	line-height: 1em;
@@ -118,7 +118,7 @@ body{
 
 }
 .Sel:hover{
-	background: url(../strip.jpg) no-repeat right center, -webkit-linear-gradient(#f1f1f1, #fdfdfd);
+	background: url(../img/strip.jpg) no-repeat right center, -webkit-linear-gradient(#f1f1f1, #fdfdfd);
 }
 
 .SP1{
