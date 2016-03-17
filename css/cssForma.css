@@ -98,17 +98,14 @@ body{
 .Sel{
 	
 	-webkit-appearance: none;
-	background: url(../img/strip.png) no-repeat right center, -webkit-linear-gradient(#fdfdfd, #f1f1f1);
+	background: url(../img/strip.png) no-repeat right center, linear-gradient(#fdfdfd, #f1f1f1);
 	background-position: right center;
 	background-repeat: no-repeat;
 	line-height: 1em;
-	/* for FF */
-	-moz-appearance: none;
-	text-indent: 0.01px; 
-	text-overflow: '';
+	text-indent: 3.01px;
 	/* for IE */
-	-ms-appearance: none;
-	appearance: none!important;
+	appearance: none;
+	-ms-appearance: none!important;
 	border-radius: 3px;
 	height: 24px;
 	width: 100%;
@@ -118,10 +115,22 @@ body{
 	margin-top: 3px;
 	margin-left: auto;
 	margin-right: auto;
+}
+@-moz-document url-prefix() {
+  .Sel {
+    background: url(../img/strip.png) linear-gradient(#fdfdfd, #f1f1f1);;
+    background-position: right center;
+	background-repeat: no-repeat;
+	line-height: 1em;
+	-moz-appearance: none;
+	text-indent: 0.01px; 
+	text-overflow: '';
+	border: 1px solid #d6d2d1;
 
+  }
 }
 .Sel:hover{
-	background: url(../img/strip.png) no-repeat right center, -webkit-linear-gradient(#f1f1f1, #fdfdfd);
+	background: url(../img/strip.png) no-repeat right center, linear-gradient(#f1f1f1, #fdfdfd);
 }
 
 .SP1{
