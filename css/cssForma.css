@@ -76,6 +76,14 @@ body{
 	position: fixed;
 	z-index: 15;
 }
+.TulTp1{
+	background-color: rgba(0,0,0,.2);
+	height: 100%;
+	width: 100%;
+	display: none;
+	position: fixed;
+	z-index: 15;
+}
 .Tultp h2{
 	text-align: center;
 	background-color: white;
